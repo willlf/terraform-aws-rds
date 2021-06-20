@@ -21,3 +21,11 @@ resource "aws_db_instance" "default" {
 variable "password" {
   description = "db_password"
 }
+
+output "db_endpoint" {
+  value - aws_db_instance.default.endpoint
+}
+
+output "db_endpoint" {
+  value - aws_db_instance.default.username
+}
